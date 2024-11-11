@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3EEFA"
+    tools:context="eaut.myapp.behoctoan.TinhNhamActivity">
+
+    <!-- Khung ảnh chứa câu hỏi -->
+    <FrameLayout
+        android:id="@+id/frame_question"
+        android:layout_width="383dp"
+        android:layout_height="159dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Background image for the question frame -->
+
+        <ImageView
+            android:id="@+id/img_question_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/carot" />
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Question?"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+    <!-- Hình ảnh phản hồi (dấu tích hoặc X) -->
+    <ImageView
+        android:id="@+id/img_feedback"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_check"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_question" />
+
+    <!-- Hình ảnh thỏ nấm -->
+
+    <!-- Hàng ngang chứa 4 đáp án -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="420dp"
+        android:layout_height="262dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_stop"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/thonam" />
+
+    <LinearLayout
+        android:id="@+id/answer_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_feedback"
+        app:layout_constraintWidth_percent="0.8">
+
+        <Button
+            android:id="@+id/btn_answer_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="Answer 1"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_answer_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="Answer 2"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_answer_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="Answer 3"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_answer_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="Answer 4"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Nút dừng lại để kết thúc quiz -->
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_container" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

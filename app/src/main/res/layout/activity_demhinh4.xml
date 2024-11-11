@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eaut.myapp.behoctoan.Demhinh4">
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="Quay lại"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="399dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bgdemhinh"
+        android:text="Đếm hình "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FDFBFB"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="248dp"
+        android:backgroundTint="#FA7CA7"
+        android:clipToOutline="true"
+        android:text="10"
+        android:textColor="#090000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#FA7CA7"
+        android:clipToOutline="true"
+        android:text="15"
+        android:textColor="#090000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="244dp"
+        android:backgroundTint="#FA7CA7"
+        android:clipToOutline="true"
+        android:text="16"
+        android:textColor="#090000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#FA7CA7"
+        android:clipToOutline="true"
+        android:text="8"
+        android:textColor="#090000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/resultImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back"
+        app:srcCompat="@drawable/dongvat3" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quaxoai" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

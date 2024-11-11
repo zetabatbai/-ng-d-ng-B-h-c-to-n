@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eaut.myapp.behoctoan.Demhinh2">
+
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Quay lại"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/khucgo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="485dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bgdemhinh"
+        android:text="Đếm hình "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FDFBFB"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="108dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="260dp"
+        android:backgroundTint="#D5EDF8"
+        android:clipToOutline="true"
+        android:text="10"
+        android:textColor="#090000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#D5EDF8"
+        android:clipToOutline="true"
+        android:text="7"
+        android:textColor="#090000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="260dp"
+        android:backgroundTint="#D5EDF8"
+        android:clipToOutline="true"
+        android:text="9"
+        android:textColor="#090000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#D5EDF8"
+        android:clipToOutline="true"
+        android:text="6"
+        android:textColor="#090000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/resultImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="455dp"
+        android:layout_height="488dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="468dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dongvat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
